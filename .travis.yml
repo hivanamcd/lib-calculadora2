@@ -2,16 +2,4 @@ language: java
 
 script:
  - mvn clean install
- - mvn release:prepare
- - mvn clean deploy
- - git config --global user.email "hivanamcd@gmail.com"
- - git config --global user.name "hivanamcd"
- - git config --global user.password "hivana1"
- - git add .
- - git commit -m "Committado por Travis-CI - artefatos maven"
- - git push https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git
-
-
-  - BUILD_NBR=$((TRAVIS_JOB_ID - 1))
-  - echo "Build Number > '${BUILD_NBR}'"
-  - git tag "Committado por Travis-CI (número da build - ${BUILD_NBR})" && git push https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git --tags
+ 
