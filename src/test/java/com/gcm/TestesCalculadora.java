@@ -34,6 +34,8 @@ public class TestesCalculadora {
 				if(j != 0) {
 					int actual = i/j;
 					assertEquals(c.divisao(i, j), actual);
+				} else {
+					assertEquals(c.divisao(i, j), 0);
 				}
 			}
 		}
