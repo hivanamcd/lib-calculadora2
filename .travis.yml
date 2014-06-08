@@ -14,4 +14,4 @@ script:
 after_success:
   - BUILD_NBR=$((TRAVIS_JOB_ID - 1))
   - echo "Build Number > '${BUILD_NBR}'"
-  - git commit -a -m "Committado por Travis-CI (número da build - ${BUILD_NBR})"
+  - git tag "Committado por Travis-CI (número da build - ${BUILD_NBR})" && git push https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git --tags
