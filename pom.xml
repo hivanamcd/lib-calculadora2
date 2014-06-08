@@ -30,6 +30,26 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5</version>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.1</version>
+        <executions>
+         <execution>
+          <goals>
+           <!-- build will fail if error found on pmd -->
+           <goal>check</goal>
+           <goal>cpd-check</goal>
+          </goals>
+         </execution>
+        </executions>
+        <configuration>
+         <sourceEncoding>utf-8</sourceEncoding>
+         <minimumTokens>100</minimumTokens>
+         <targetJdk>1.7</targetJdk>
+        </configuration>
+       </plugin>
     </plugins>
   </build>
   <distributionManagement>
@@ -42,4 +62,30 @@
     <!-- github server corresponds to entry in ~/.m2/settings.xml -->
     <github.global.server>github</github.global.server>
 </properties>
+  
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+         <rulesets>
+          <!-- Two rule sets that come bundled with PMD -->
+          <ruleset>/rulesets/braces.xml</ruleset>
+          <ruleset>/rulesets/naming.xml</ruleset>
+         </rulesets>
+        </configuration>
+        <reportSets>
+         <reportSet>
+          <reports>
+           <!-- enable only 1 report -->
+           <report>pmd</report>
+           <!-- <report>cpd</report> -->
+          </reports>
+         </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>

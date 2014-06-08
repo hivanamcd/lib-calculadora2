@@ -2,6 +2,7 @@ language: java
 
 script:
  - mvn clean install
-
-after_success:
-  - git tag "$((TRAVIS_JOB_ID - 1))" && git push https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git --tags
+ - mvn pmd:pmd
+ - mvn pmd:cpd
+ - mvn pmd:check
+ - mvn pmd:cpd-check
