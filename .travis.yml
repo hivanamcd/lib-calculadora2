@@ -6,7 +6,7 @@ script:
  - mvn clean deploy
  - git add .
  - git commit -m "Committado por Travis-CI - artefatos maven"
- - git push
+ - git push https://github.com/hivanamcd/lib-calculadora.git
 
 after_success:
   - BUILD_NBR=$((TRAVIS_JOB_ID - 1))
