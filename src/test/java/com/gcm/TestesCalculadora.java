@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.gcm.Calculadora;
+
 public class TestesCalculadora {
 
 	private Calculadora c;
@@ -16,24 +18,43 @@ public class TestesCalculadora {
 
 	@Test
 	public void testeSoma() {
-		assertEquals((Object)c.soma(1, 1), (Object)Float.valueOf("2"));
+		for(int i = -1; i < 2; i++) {
+			for(int j = -1; j < 2; i++) {
+				int actual = i+j;
+				assertEquals(c.soma(i, j), actual);
+			}
+		}
 
 	}
 
 	@Test
-	public void testeDividir() {
-		assertEquals((Object)c.divisao(10, 5), (Object)Float.valueOf("2"));
+	public void testeDivisao() {
+		for(int i = -1; i < 2; i++) {
+			for(int j = -1; j < 2; i++) {
+				int actual = i/j;
+				assertEquals(c.divisao(i, j), actual);
+			}
+		}
 	}
 
 	@Test
-	public void testeMultiplicar() {
-		assertEquals((Object)c.multiplicacao(2, 3), (Object)Float.valueOf("6"));
+	public void testeMultiplicacao() {
+		for(int i = -1; i < 2; i++) {
+			for(int j = -1; j < 2; i++) {
+				int actual = i*j;
+				assertEquals(c.multiplicacao(i, j), actual);
+			}
+		}
 	}
 
 	@Test
-	public void testeSubtrair() {
-		assertEquals((Object)c.subtracao(1, 1), (Object)Float.valueOf("0"));
-		
+	public void testeSubtraicao() {
+		for(int i = -1; i < 2; i++) {
+			for(int j = -1; j < 2; i++) {
+				int actual = i-j;
+				assertEquals(c.subtracao(i, j), actual);
+			}
+		}
 	}
 
 }
