@@ -7,3 +7,4 @@ script:
  - mvn pmd:check
  - mvn pmd:cpd-check
  - mvn checkstyle:checkstyle
+ - mvn clean package

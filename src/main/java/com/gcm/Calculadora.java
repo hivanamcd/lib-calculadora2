@@ -16,6 +16,9 @@ public class Calculadora {
 	}
 	
 	public int divisao(int x, int y) {
-		return x/y;
+		if(y!=0)
+			return x/y;
+		else
+			return 0;
 	}
 }
