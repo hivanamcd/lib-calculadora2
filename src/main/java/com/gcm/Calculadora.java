@@ -1,7 +1,5 @@
 package com.gcm;
 
-import java.io.IOException;
-
 public class Calculadora {
 	
 	public int soma(int x, int y) {
@@ -17,11 +15,6 @@ public class Calculadora {
 	}
 	
 	public int divisao(int x, int y) {
-		try {
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
 		return x/y;
 	}
 }
