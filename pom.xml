@@ -3,7 +3,7 @@
   <groupId>com.gcm</groupId>
   <artifactId>lib-calculadora</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <name>lib-calculadora</name>
   <url>http://maven.apache.org</url>
   
@@ -20,7 +20,7 @@
 	<connection>scm:git:git@github.com:hivanamcd/lib-calculadora.git</connection>
 	<url>scm:git:git@github.com:tobrien/hivanamcd/lib-calculadora.git</url>
 	<developerConnection>scm:git:git@github.com:hivanamcd/lib-calculadora.git</developerConnection>
-    <tag>lib-calculadora-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
