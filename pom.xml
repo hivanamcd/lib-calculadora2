@@ -18,7 +18,7 @@
 
   <scm>
 	<connection>scm:git:git@github.com:hivanamcd/lib-calculadora.git</connection>
-	<url>scm:git:git@github.com:tobrien/hivanamcd/lib-calculadora.git</url>
+	<url>scm:git:git@github.com:hivanamcd/lib-calculadora.git</url>
 	<developerConnection>scm:git:git@github.com:hivanamcd/lib-calculadora.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
@@ -38,4 +38,8 @@
         <url>file://${project.build.directory}/mvn-repo</url>
     </repository>
 </distributionManagement>
+<properties>
+    <!-- github server corresponds to entry in ~/.m2/settings.xml -->
+    <github.global.server>github</github.global.server>
+</properties>
 </project>

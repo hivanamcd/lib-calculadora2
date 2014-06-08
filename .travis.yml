@@ -1,0 +1,11 @@
+language: java
+
+script:
+ - mvn clean install
+ - mvn release:prepare
+ - mvn clean deploy
+
+after_success:
+  - BUILD_NBR=$((TRAVIS_JOB_ID - 1))
+  - echo "Build Number > '${BUILD_NBR}'"
+  - git commit -a -m "Committado por Travis-CI (número da build - ${BUILD_NBR})"
