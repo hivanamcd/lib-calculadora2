@@ -6,3 +6,4 @@ script:
  - mvn pmd:cpd
  - mvn pmd:check
  - mvn pmd:cpd-check
+ - mvn checkstyle:checkstyle
