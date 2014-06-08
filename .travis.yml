@@ -8,3 +8,4 @@ script:
  - mvn pmd:cpd-check
  - mvn checkstyle:checkstyle
  - mvn clean package
+ - mvn deploy
