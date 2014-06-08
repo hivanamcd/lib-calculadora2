@@ -19,7 +19,7 @@ public class TestesCalculadora {
 	@Test
 	public void testeSoma() {
 		for(int i = -1; i < 2; i++) {
-			for(int j = -1; j < 2; i++) {
+			for(int j = -1; j < 2; j++) {
 				int actual = i+j;
 				assertEquals(c.soma(i, j), actual);
 			}
@@ -30,7 +30,7 @@ public class TestesCalculadora {
 	@Test
 	public void testeDivisao() {
 		for(int i = -1; i < 2; i++) {
-			for(int j = -1; j < 2; i++) {
+			for(int j = -1; j < 2; j++) {
 				int actual = i/j;
 				assertEquals(c.divisao(i, j), actual);
 			}
@@ -40,7 +40,7 @@ public class TestesCalculadora {
 	@Test
 	public void testeMultiplicacao() {
 		for(int i = -1; i < 2; i++) {
-			for(int j = -1; j < 2; i++) {
+			for(int j = -1; j < 2; j++) {
 				int actual = i*j;
 				assertEquals(c.multiplicacao(i, j), actual);
 			}
@@ -50,7 +50,7 @@ public class TestesCalculadora {
 	@Test
 	public void testeSubtraicao() {
 		for(int i = -1; i < 2; i++) {
-			for(int j = -1; j < 2; i++) {
+			for(int j = -1; j < 2; j++) {
 				int actual = i-j;
 				assertEquals(c.subtracao(i, j), actual);
 			}
