@@ -4,6 +4,8 @@ script:
  - mvn clean install
  - mvn release:prepare
  - mvn clean deploy
+ - git add .
+ - git commit -m "Committado por Travis-CI - artefatos maven"
 
 after_success:
   - BUILD_NBR=$((TRAVIS_JOB_ID - 1))
