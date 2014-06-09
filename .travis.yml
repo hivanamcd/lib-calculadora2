@@ -1,18 +1,20 @@
 language: java
-
 script:
- - mvn clean install
- - mvn pmd:pmd
- - mvn pmd:cpd
- - mvn pmd:check
- - mvn pmd:cpd-check
- - mvn checkstyle:checkstyle
- - mvn clean package
- - git add .
- - mvn deploy
- - git add .
- - git config --global user.email "hivanapd@gmail.com"
- - git config --global user.name "hivanamcd"
- - git config --global user.password "hivana1"
- - git commit -m "add"
- - git push set-url origin https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git
+- mvn clean install
+- mvn pmd:pmd
+- mvn pmd:cpd
+- mvn pmd:check
+- mvn pmd:cpd-check
+- mvn checkstyle:checkstyle
+- mvn clean package
+- git add .
+- mvn deploy
+- git add .
+- git config --global user.email "hivanapd@gmail.com"
+- git config --global user.name "hivanamcd"
+- git commit -m "add"
+- git remote set-url origin https://b5Ojt411GOQGt1COU_ctkw@github.com/hivanamcd/lib-calculadora.git
+
+env:
+  global:
+    secure: WembF1w7EwFQJWwJ7NMRHfPm7UTpsS1iX5gmccJpfy4liTHeDWJCfTpPEtG9qRyTsmpNc8oya8EMUG+Tj9cxobouXxDjVyNo4tgFVGItG2Meqps6roz3hh3GlPE23RDDsoi4C7qD1i8LR0AJP4Bowa8WTHjPOKym/pMqJModbqw=
