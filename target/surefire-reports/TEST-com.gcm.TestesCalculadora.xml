@@ -60,8 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.002" classname="com.gcm.TestesCalculadora" name="testeSubtraicao"/>
+  <testcase time="0.001" classname="com.gcm.TestesCalculadora" name="testeSubtraicao"/>
   <testcase time="0" classname="com.gcm.TestesCalculadora" name="testeSoma"/>
   <testcase time="0.001" classname="com.gcm.TestesCalculadora" name="testeDivisao"/>
-  <testcase time="0" classname="com.gcm.TestesCalculadora" name="testeMultiplicacao"/>
+  <testcase time="0.001" classname="com.gcm.TestesCalculadora" name="testeMultiplicacao"/>
 </testsuite>
