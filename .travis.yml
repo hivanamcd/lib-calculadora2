@@ -21,5 +21,4 @@ script:
  - git config --global user.name "hivanamcd"
  - git config --global user.password "hivana1"
  - git commit -m "add"
- - git remote add origin git@github.com:hivanamcd/lib-calculadora.git
- - git push -u origin master
+ - git push origin master https://github.com/hivanamcd/lib-calculadora.git
