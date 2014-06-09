@@ -9,3 +9,6 @@ script:
  - mvn checkstyle:checkstyle
  - mvn clean package
  - mvn deploy
+ - git add file:///home/travis/build/hivanamcd/lib-calculadora/target/
+ - git commit -m "add"
+ - git push https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git
