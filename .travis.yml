@@ -1,20 +1,26 @@
 language: java
 script:
 - mvn clean install
-- mvn pmd:pmd
-- mvn pmd:cpd
-- mvn pmd:check
-- mvn pmd:cpd-check
-- mvn checkstyle:checkstyle
-- mvn clean package
-- git add .
-- mvn deploy
-- git checkout master
-- git add -f . 
-- git config --global user.email ${GIT_EMAIL}
-- git config --global user.name ${GIT_NAME}
-- git commit -m "lib-calculadora - build travis"
-- git push -fq https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git master
+# - git checkout master
+# - git rm target -r
+# - mvn pmd:pmd
+# - git add .
+# - mvn pmd:cpd
+# - git add .
+# - mvn pmd:check
+# - git add .
+# - mvn pmd:cpd-check
+# - git add .
+# - mvn checkstyle:checkstyle
+# - git add .
+# - mvn clean package
+# - git add .
+# - mvn deploy
+# - git add . 
+# - git config --global user.email ${GIT_EMAIL}
+# - git config --global user.name ${GIT_NAME}
+# - git commit -m "lib-calculadora - build travis"
+# - git push -fq https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git master
 
 env:
   global:
