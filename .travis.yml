@@ -26,7 +26,7 @@ env:
   global:
     secure: WembF1w7EwFQJWwJ7NMRHfPm7UTpsS1iX5gmccJpfy4liTHeDWJCfTpPEtG9qRyTsmpNc8oya8EMUG+Tj9cxobouXxDjVyNo4tgFVGItG2Meqps6roz3hh3GlPE23RDDsoi4C7qD1i8LR0AJP4Bowa8WTHjPOKym/pMqJModbqw=
 
-after_success:
+after_success: 
 - BUILD_NBR=$((TRAVIS_JOB_ID - 1)) 
 - echo "Build Number > '${BUILD_NBR}'"
 - git config --global user.email ${GIT_EMAIL}
