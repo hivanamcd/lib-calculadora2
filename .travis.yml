@@ -32,6 +32,6 @@ after_success:
 - git config --global user.email ${GIT_EMAIL}
 - git config --global user.name ${GIT_NAME}
 - git tag -a ${BUILD_NBR} -m "Tag travis"
-- git push https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git --tags
+# - git push https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git --tags
 
   
