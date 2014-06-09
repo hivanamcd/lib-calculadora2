@@ -9,11 +9,11 @@ script:
 - mvn clean package
 - git add .
 - mvn deploy
-- git add .
-- git config --global user.email "hivanapd@gmail.com"
-- git config --global user.name "hivanamcd"
+- git add -f . 
+- git config --global user.email ${GIT_EMAIL}
+- git config --global user.name ${GIT_NAME}
 - git commit -m "add"
-- git push https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git master
+- git push -fq https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git master
 
 env:
   global:
