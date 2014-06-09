@@ -12,6 +12,11 @@ public class Calculadora {
 	}
 	
 	public int multiplicacao(int x, int y) {
+		try {
+
+		} catch (Exception e) {
+
+		}
 		return x*y;
 	}
 	
@@ -21,4 +26,5 @@ public class Calculadora {
 		else
 			return 0;
 	}
+
 }
