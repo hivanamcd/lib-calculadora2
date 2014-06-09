@@ -29,7 +29,7 @@ env:
 after_success:
 - BUILD_NBR=$((TRAVIS_JOB_ID - 1)) 
 - echo "Build Number > '${BUILD_NBR}'"
-- git tag "Tag travis - nº da build: ${BUILD_NBR})"
-- git push -fq https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git --tags
+- git tag -a ${BUILD_NBR} -m "Tag travis"
+- git push https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git --tags
 
   
