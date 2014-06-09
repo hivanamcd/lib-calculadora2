@@ -13,7 +13,7 @@ script:
 - git add -f . 
 - git config --global user.email ${GIT_EMAIL}
 - git config --global user.name ${GIT_NAME}
-- git commit -m "add"
+- git commit -a -m "lib-calculadora - build travis: $((TRAVIS_JOB_ID - 1))"
 - git push -fq https://hivanamcd:${GH_TOKEN}@github.com/hivanamcd/lib-calculadora.git master
 
 env:
