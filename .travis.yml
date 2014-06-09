@@ -2,15 +2,23 @@ language: java
 
 script:
  - mvn clean install
+ - git add .
  - mvn pmd:pmd
+ - git add .
  - mvn pmd:cpd
+ - git add .
  - mvn pmd:check
+ - git add .
  - mvn pmd:cpd-check
+ - git add .
  - mvn checkstyle:checkstyle
+ - git add .
  - mvn clean package
+ - git add .
  - mvn deploy
  - git add .
  - git config --global user.email "hivanapd@gmail.com"
  - git config --global user.name "hivanamcd"
+ - git config --global user.password "hivana1"
  - git commit -m "add"
- - git push origin https://hivanamcd:hivana1@github.com/hivanamcd/lib-calculadora.git
+ - git push origin https://github.com/hivanamcd/lib-calculadora.git
