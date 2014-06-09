@@ -2,13 +2,13 @@ language: java
 script:
 - mvn clean install
 # - git checkout master
- - mvn pmd:pmd
+- mvn pmd:pmd
 # - git add .
- - mvn pmd:cpd
+- mvn pmd:cpd
 # - git add .
- - mvn pmd:check
+- mvn pmd:check
 # - git add .
- - mvn pmd:cpd-check
+- mvn pmd:cpd-check
 # - git add .
 # - mvn checkstyle:checkstyle
 # - git add .
